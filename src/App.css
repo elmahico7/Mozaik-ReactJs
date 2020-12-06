@@ -1,0 +1,459 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+@font-face {
+  font-family: "OpenSansLight";
+  src: local("OpenSansLight"),
+  url("./fonts/OpenSansLight.ttf") format("truetype");
+  font-weight: normal;
+}
+header {
+  background: url('./img/hero.jpg');
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 100vh;
+  background-position: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  background: url('./img/logolight.png') no-repeat;
+  width: 140px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.logo.active {
+  background: url('./img/logodark.png') no-repeat;
+  width: 140px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.navbar {
+  position: fixed;
+  top:0;
+  height: 96px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+}
+.navbar.active {
+    background-color: white;
+}
+.navbar.active a {
+  color: black;
+}
+.navbar ul li {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 0 20px;
+  color: white;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.navbar a:hover {
+  color: red;
+}
+.book {
+  color: white;
+  background-color: #91672c;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border: none;
+  margin-left: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.book:hover {
+ background-color: red;
+}
+.lorem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  color: whitesmoke;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subtitle{
+  color: whitesmoke;
+  width: 40%;
+  line-height: 30px;
+  font-size: 18px;
+  margin: 10px;
+  text-align: center;
+}
+.main {
+  background: url('./img/rooms-background.jpg');
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+}
+.main-title {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main p {
+  width: 40%;
+  text-align: center;
+}
+.paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 22px;
+  flex-direction: column;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.card {
+  width: 24%;
+  padding: 10px;
+}
+.imgs {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.slick-dots {
+  margin-bottom: 10px !important;
+}
+.slick-dots li  {
+  margin-bottom: 20px !important;
+  margin: 12px !important;
+  padding: 12px !important;
+}
+.slick-dots li.slick-active button:before {
+  color: brown !important;
+}
+.slick-dots li button:before {
+  content: "—" !important;
+  font-size: 55px !important;
+}
+.card-image img{
+  width: 100%;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+.card-content {
+  background-color: white;
+  width: 100%;
+  margin-top: -22px;
+  padding: 20px 0;
+}
+.card-content > h3 {
+  padding: 5px;
+  margin-left: 15px;
+}
+.card-content > p {
+ text-align: justify;
+ width: 80%;
+ margin-left: 20px;
+}
+.card-content a {
+  color: brown;
+  text-decoration: none;
+  margin-left: 20px; 
+}
+.borders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.border {
+  display:flex;
+  justify-content: center;
+  padding: 5px;
+  align-items: center;
+}
+.border1 {
+  border-radius: 2px;
+  width: 30px;
+  height: 0px;
+  border: 1px solid brown;
+}
+.border2 {
+  border-radius: 2px;
+  width: 30px;
+  height: 0px;
+  border: 1px solid grey;
+}
+.border3 {
+  border-radius: 2px;
+  width: 30px;
+  height: 0px;
+  border: 1px solid grey;
+}
+.footer {
+  background-color: rgba(77, 105, 85, 0.822);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu {
+  margin:0;
+}
+.footer ul li {
+  display: inline-block;
+  text-align: center; 
+   font-size: 13px;
+}
+.footer a {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 30px 20px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.footer a:hover {
+  color: red;
+}
+.copyright {
+  color: lightgrey;
+  font-size: 12px;
+}
+.view:hover {
+  color: red;
+}
+.slides {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.back {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 2em;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "OpenSansLight";
+  color:#FFFFFF;
+  background-color:#4eb5f1;
+  text-align:center;
+  transition: 0.4s;
+  border: none;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  cursor: pointer;
+}
+.back:hover {
+  background-color:#4095c6;
+}
+.arrow {
+  position: absolute;
+  top: 90%;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+@media (max-width: 1050px) {
+  .back {
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    width: 30%;
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .card {
+    width: 50%;
+  }
+  .navbar ul li a  {
+    font-size: 10px;
+  }
+  .book {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .subtitle {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+#menu-icon {
+  display: none;
+  z-index: 2;
+  color: black;
+}
+#slideout-menu {
+  display: none;
+  position: absolute;
+  top: 100px;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+  text-align: justify;
+}
+#slideout-menu ul li {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#slideout-menu a {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+#slideout-menu .book {
+  margin-left: 0px;
+}
+.book-nav {
+  display: none;
+}
+@media (max-width: 880px) {
+  .book-nav {
+    display: block;
+    color: white;
+    background-color: #91672c;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    margin-right: 55px;
+    border: none;
+    font-size: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+    justify-content: center;
+  }
+  .title {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .subtitle {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .navbar ul li {
+    display: none;
+  }
+  #slideout-menu {
+    display: none;
+  }
+  #menu-icon {
+    display: flex;
+    font-size: 30px;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    width: 140px;
+    height: 70px;
+    margin-top: 0;
+    object-fit: contain;
+  }
+  .logo.active {
+    width: 140px;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 667px) {
+  .cards {
+    width: 100%;
+    height: auto;
+  }
+  .card {
+    width: 100%;
+  }
+  .footer ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 465px) {
+  .title {
+    margin-top: 100px;
+  }
+  .subtitle {
+    line-height: 20px;
+  }
+.logo {
+  margin-left: 5px;
+}
+.logo.active {
+  width: 140px;
+  margin-left: 5px;
+}
+}
+@media (max-width: 327px) {
+  .book-nav {
+    padding: 5px 5px;
+    margin-left: 15px;
+  }
+}
+@media (max-width: 280px) {
+  .logo {
+   background: url('./img/logolightmin.png') no-repeat;
+   margin-top: 10px;
+  }
+  .logo.active {
+    background: url('./img/logodarkmin.png') no-repeat;
+    margin-top: 40px;
+  }
+  .book-nav {
+    padding: 10px;
+  }
+}
